@@ -95,26 +95,29 @@
                     <option value="WY">Wyoming</option>
                 </select>
                 <label for="zipcode">Zip Code</label>
-                <input type="text" id="zipcode" name="user_zip" inputmode="numeric" maxlength="5">
+                <input type="text" id="zipcode" name="user_zip" inputmode="numeric" class="zipcode" maxlength="5">
             </fieldset>
             <hr class="thin">
             <fieldset>
                 <legend class="title">Newsletter</legend>
                 <p class="newsletter_select">Select the newsletters you would like to receive</p>
-                <input type="checkbox" id="HTMLnews" name="user_news_pref" value="HTMLpref">
-                <label for="HTMLnews">HTML News</label>
-                <input type="checkbox" id="CSSnews" name="user_news_pref" value="CSSnews">
-                <label for="CSSnews">CSS News</label>
-                <input type="checkbox" id="JSnews" name="user_news_pref" value="JSnews">
-                <label for="JSnews">Javascript News</label>
+                <div class="inline-field">
+                    <input type="checkbox" id="HTMLnews" name="user_news_pref" value="HTMLpref"><label
+                        for="HTMLnews">HTML News</label><br>
 
+                    <input type="checkbox" id="CSSnews" name="user_news_pref" value="CSSnews"> <label for="CSSnews">CSS
+                        News</label><br>
+
+                    <input type="checkbox" id="JSnews" name="user_news_pref" value="JSnews"><label
+                        for="JSnews">Javascript News</label>
+                </div>
                 <label>Newsletter format</label>
-
-                <input type="radio" id="HTMLformat" name="newsletter_format" value="HTML">
-                <label for="HTMLformat">HTML</label>
-
-                <input type="radio" id="plaintextformat" name="newsletter_format" value="plaintext">
-                <label for="plaintextformat">Plain Text</label>
+                <div class="inline-field">
+                    <input type="radio" id="HTMLformat" name="newsletter_format" value="HTML"><label
+                        for="HTMLformat">HTML</label><br>
+                    <input type="radio" id="plaintextformat" name="newsletter_format" value="plaintext"><label
+                        for="plaintextformat">Plain Text</label>
+                </div>
 
                 <label for="other">Other topics you'd like to hear about</label>
                 <textarea id="other" name="user_other"></textarea>
