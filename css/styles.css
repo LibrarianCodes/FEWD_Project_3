@@ -49,11 +49,11 @@ form {
     margin: 0 auto; 
 }
 
-fieldset {
+ fieldset {
     border-style: none;
     display: flex;
     flex-direction: column; 
-}
+} 
 
 legend {
     font-size: 20px;
@@ -68,8 +68,8 @@ label {
     color: rgb(44, 44, 44);
 }
 
-.zipcode {
-    width: 150px;
+#zipcode {
+    width: 25%;
 }
 
 input[type="text"],
@@ -87,9 +87,8 @@ select {
   color: #8a97a0;
   margin-bottom: 30px;
   border-radius: 4px;
+  width:100%;
 }
-
-
 
 textarea {
     height: 100px;
@@ -103,7 +102,7 @@ textarea {
 
 .inline-field input,
 .inline-field label {
-display: inline-block;
+    display: inline-block;
 } 
 
 .inline-field {
@@ -111,8 +110,8 @@ display: inline-block;
 }
 
 .btn {
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
     color: white;
     font-family: 'Merriweather';
     background-color: rgb(55, 190, 190);
@@ -131,3 +130,32 @@ footer > p {
     color: rgb(158, 154, 154);
     margin-bottom: 100px;
 }
+
+
+@media (min-width: 768px) {
+
+    .btn {
+        width: 735px;
+    }
+
+    .container input {
+        flex-basis: 75%;
+    }  
+
+     #zipcode {
+        max-width: 25%;
+        justify-content: flex-start;
+    } 
+
+    fieldset .flex-pair {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+     
+    #state {
+        width: 75%;
+    }
+    
+    }
+
