@@ -46,13 +46,15 @@ hr {
 form {
     width:99%;
     max-width: 768px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    background-color: rgba(247, 247, 247, 0.966);
 }
 
  fieldset {
     border-style: none;
     display: flex;
     flex-direction: column; 
+    
 } 
 
 legend {
@@ -65,7 +67,7 @@ legend {
 label {
     display: block;
     margin-bottom: 10px;
-    color: rgb(44, 44, 44);
+    color: rgb(100, 100, 100);
 }
 
 #zipcode {
@@ -130,6 +132,13 @@ footer > p {
     color: rgb(158, 154, 154);
     margin-bottom: 100px;
 }
+
+input:focus,
+select:focus {
+    outline: 3px solid rgb(74, 56, 104);
+
+}
+
 
 
 @media (min-width: 768px) {
