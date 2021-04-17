@@ -134,9 +134,10 @@ footer > p {
 }
 
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
     outline: 3px solid rgb(74, 56, 104);
-
+    transition-duration: 3s;
 }
 
 
