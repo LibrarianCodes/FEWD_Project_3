@@ -92,6 +92,7 @@ select {
   width:100%;
 }
 
+
 textarea {
     height: 100px;
     resize: none;
@@ -137,10 +138,8 @@ input:focus,
 select:focus,
 textarea:focus {
     outline: 3px solid rgb(74, 56, 104);
-    transition-duration: 3s;
+    transition-duration: .2s;
 }
-
-
 
 @media (min-width: 768px) {
 
@@ -148,24 +147,31 @@ textarea:focus {
         width: 735px;
     }
 
+
     .container input {
         flex-basis: 75%;
     }  
 
-     #zipcode {
-        max-width: 25%;
-        justify-content: flex-start;
-    } 
 
     fieldset .flex-pair {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
      
+    .flex-pair {
+        justify-content: flex-start;
+      }
+      label {
+        flex-basis: 25%;
+      }
+
+    #zipcode {
+        max-width: 25%;   
+    } 
+
     #state {
         width: 75%;
     }
-    
+
     }
 
